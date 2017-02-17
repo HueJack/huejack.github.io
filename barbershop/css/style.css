@@ -1,0 +1,145 @@
+body {
+    font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    background: #070707 url(../images/background.jpg) no-repeat;
+}
+
+.container {
+    width: 940px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    margin: 0 auto;
+}
+
+.container::after {
+    content: '';
+
+    display: table;
+    clear: both;
+}
+
+.header {
+    margin-bottom: 60px;
+    main-height: 72px;
+    background: black;
+}
+
+.main-menu {
+    float: left;
+    width: 800px;
+
+
+}
+.main-menu__list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-menu__item {
+    display: inline-block;
+    font-size: 0px;
+    vertical-align: top;
+}
+.main-menu__link {
+    display: block;
+    margin: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    line-height: 20px;
+
+    padding: 25px 24px;
+}
+.main-menu__link:hover {
+    background-color: #242424;
+}
+.user-login {
+    float: right;
+}
+
+.user-login__link {
+    display: block;
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    line-height: 20px;
+    padding: 25px 20px;
+    padding-left: 55px;
+}
+
+.user-login__link::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 23px;
+    width: 18px;
+    height: 26px;
+    background: url(../images/pattern-icons.png);
+    background-repeat: no-repeat;
+    background-position: 0px 10px;
+    opacity: 0.3;
+}
+.user-login__link:hover::before {
+    opacity: 1;
+}
+.user-login__link:hover {
+    background-color: #242424;
+}
+
+.main-logo {
+    padding-bottom: 40px;
+
+    width: 380px;
+
+    margin: 0 auto;
+}
+.feathers {
+    margin: 0px;
+    padding: 0px;
+}
+.feathers__item {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+.feathers__item:last-child {
+    margin-right: 0px;
+}
+.main-content {
+    padding: 50px 80px;
+}
+
+.main-content__left {
+    width: 380px;
+
+    float: left;
+}
+
+.main-content__right {
+    float: right;
+    width: 300px;
+}
+
+.footer-info {
+    float: left;
+
+    width: 380px;
+    margin-right: 20px;
+}
+
+.footer-social {
+    float: left;
+    width: 140px;
+}
+
+.footer-develop {
+    float: right;
+
+    width: 140px;
+}
