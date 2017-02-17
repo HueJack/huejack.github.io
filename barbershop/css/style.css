@@ -95,18 +95,54 @@ body {
 .main-logo {
     padding-bottom: 40px;
 
-    width: 380px;
+    width: 368px;
 
     margin: 0 auto;
+
+    margin-bottom: 33px;
 }
+
+.main-logo__image {
+    width: 368px;
+    height: 204px;
+}
+
 .feathers {
     margin: 0px;
     padding: 0px;
+    color: white;
+    list-style: none;
 }
+.feathers__title {
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    padding-bottom: 44px;
+    margin-bottom: 26px;
+    position: relative;
+}
+.feathers__title::after {
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    bottom: 0px;
+    margin-left: -10px;
+    transform: rotate(45deg);
+}
+.feathers__text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
 .feathers__item {
     width: 300px;
     float: left;
     margin-right: 20px;
+    text-align: center;
 }
 .feathers__item:last-child {
     margin-right: 0px;
